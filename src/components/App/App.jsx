@@ -1,5 +1,10 @@
+//Main Dependencies
+import React from 'react';
 import { Route, HashRouter as Router } from 'react-router-dom';
+//Different Pages
 import MovieList from '../MovieList/MovieList';
+import DetailsPage from '../DetailsPage/DetailsPage';
+//Import CSS styling
 import './App.css';
 
 function App() {
@@ -12,7 +17,9 @@ function App() {
         </Route>
         
         {/* Details page */}
-
+        <Route path="/detailspage" exact>
+          <DetailsPage />
+        </Route>
         {/* Add Movie page */}
         
       </Router>
